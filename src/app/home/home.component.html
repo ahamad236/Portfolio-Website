@@ -1,0 +1,189 @@
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/images/ahmadlogo.jfif" alt="logo" class="logo" />
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" (click)="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" (click)="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Deveoper || Angular Developer</p>
+            <h1>
+                Hi, i'm <span>Ahamad</span>
+                <br />From India
+            </h1>
+        </div>
+    </div>
+</div>
+<!-- -------------- about -------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/images/ahamad-vertical-image.jpg" alt="user" />
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    A dedicated and experienced Angular developer with 3+ years of experience in
+                    developing responsive, interactive reusable user interfaces, integrating APIs, optimizing
+                    performance, ensuring cross-browser compatibility and collaborating with the design, backend
+                    teams to build seamless, high-performing, and secure Angular apps. Having excellence in
+                    debugging, Troubleshooting and resolving any issues, bugs or performance bottlenecks in
+                    frontend code and writing unit tests for Angular components, services and modules.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" (click)="opentab('skills', $event)">Skills</p>
+                    <p class="tab-links" (click)="opentab('experience', $event)">Experience</p>
+                    <p class="tab-links" (click)="opentab('education', $event)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-end Development</span><br>Angular, TypeScript, JavaScript, HTML, CSS, Angular
+                            CLI, Bootstrap, RxJS</li>
+                        <li><span>Version Control & APIs</span><br>Git, GitHub, Tortoise SVN & RESTful APIs, JSON</li>
+                        <li><span>Others</span><br>Jasmine, Karma, Webpack, npm, Scrum</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>March 2022 - Current</span><br>Frontend Developer (Angular) at Focus Softnet Pvt Ltd.
+                        </li>
+                        <li><span>October 2021 to February 2022</span><br>FullStack Dotnet Training from Sathya
+                            Institute Hyderabad.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>Bachelor of Science (B.Sc) (MSCs) from Krishna University Andhra
+                            Pradesh.</li>
+                        <li><span>2014</span><br>Intermediate (MPC) from NRI Junior College Vijayawada.</li>
+                        <li><span>2012</span><br>SSC from Care & Share MCH School Vijayawada.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------- service ------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As a passionate web designer, I create visually engaging, user-friendly websites that blend
+                    creativity with
+                    functionality. My designs are focused on delivering seamless experiences, ensuring that every site
+                    is not only
+                    aesthetically pleasing but also intuitive and responsive across all devices. From concept to launch,
+                    I work closely with
+                    clients to bring their vision to life while maintaining a strong focus on performance and
+                    accessibility</p>
+                <a href="">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I specialize in crafting intuitive and visually appealing digital experiences. By understanding user
+                    needs and behavior,
+                    I design seamless interfaces that are both functional and aesthetically engaging. My focus is on
+                    creating user-centered
+                    designs that enhance usability, ensuring a smooth, enjoyable experience from start to finish</p>
+                <a href="">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I focus on creating intuitive, user-friendly mobile applications that provide seamless experiences.
+                    From wireframing to
+                    final design, I ensure each app is not only visually appealing but also easy to navigate, helping
+                    users achieve their
+                    goals efficiently. My designs are built with a strong emphasis on usability, performance, and
+                    responsiveness across all
+                    devices</p>
+                <a href="">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------- portfolio -------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/images/work-3.png" alt="work1" />
+                <div class="layer">
+                    <h3>Angular Quiz Website</h3>
+                    <p>This Angular-based quiz website offers an interactive and engaging way to test your knowledge on
+                        various topics. Built with the power of Angular, the site features a responsive and dynamic
+                        interface, providing real-time feedback and scoring. Users can easily navigate through different
+                        quizzes, track their progress, and enjoy a seamless experience across devices.
+                    </p>
+                    <a href="https://angular-quiz-app-9ae23.web.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/images/work-1.png" alt="work1" />
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/images/work-2.png" alt="work2" />
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------- contact -------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ahmadshaik4u&#64;gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91-7702075335</p>
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                    <a href="https://github.com/ahamad236"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shaik-pakeer-ahamad-94391a31a/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="assets/resume/ShaikPakeerAhamadResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input type="email" name="Email" placeholder="Your Email" required />
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#64; Ahamad. Made with <i class="fa-solid fa-heart"></i> by Shaik.Pakeer Ahamad</p>
+    </div>
+</div>
