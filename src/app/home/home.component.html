@@ -31,7 +31,8 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>
-                    A dedicated and experienced Frontend developer specializing in Angular and Vue with 3+ years of experience in
+                    A dedicated and experienced Frontend developer specializing in Angular and Vue with 3+ years of
+                    experience in
                     developing responsive, interactive reusable user interfaces, integrating APIs, optimizing
                     performance, ensuring cross-browser compatibility and collaborating with the design, backend
                     teams to build seamless, high-performing, and secure Angular apps. Having excellence in
@@ -46,7 +47,8 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Front-end Development</span><br>Angular, Vue, TypeScript, JavaScript, HTML, CSS, Angular
+                        <li><span>Front-end Development</span><br>Angular, Vue, TypeScript, JavaScript, HTML, CSS,
+                            Angular
                             CLI, Bootstrap, RxJS, Axios</li>
                         <li><span>Version Control & APIs</span><br>Git, GitHub, Tortoise SVN & RESTful APIs, JSON</li>
                         <li><span>Others</span><br>Jasmine, Karma, Webpack, npm, Scrum</li>
@@ -54,7 +56,8 @@
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>March 2022 - Current</span><br>Frontend Developer (Angular & Vue) at Focus Softnet Pvt Ltd.
+                        <li><span>March 2022 - Current</span><br>Frontend Developer (Angular & Vue) at Focus Softnet Pvt
+                            Ltd.
                         </li>
                         <li><span>October 2021 to February 2022</span><br>FullStack Dotnet Training from Sathya
                             Institute Hyderabad.</li>
@@ -146,9 +149,10 @@
                 <img src="assets/images/work-1.png" alt="work1" />
                 <div class="layer">
                     <h3>Angular Todo List Website</h3>
-                    <p>This To-Do List Website helps users organize, manage, and prioritize tasks or activities they need to
-                    complete. It's a simple interface where users can add tasks, mark them as complete, and delete
-                    or edit them as needed.
+                    <p>This To-Do List Website helps users organize, manage, and prioritize tasks or activities they
+                        need to
+                        complete. It's a simple interface where users can add tasks, mark them as complete, and delete
+                        or edit them as needed.
                     </p>
                     <a href="https://ahamad-todo-list.web.app/"><i class="fa-solid fa-link"></i></a>
                 </div>
@@ -185,12 +189,13 @@
                 <a href="assets/resume/ShaikPakeerAhamadResume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required />
-                    <input type="email" name="Email" placeholder="Your Email" required />
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <form #submitToGoogleSheetForm="ngForm" (ngSubmit)="onSubmit($event, submitToGoogleSheetForm)">
+                    <input type="text" name="Name" ngModel placeholder="Your Name" required />
+                    <input type="email" name="Email" ngModel placeholder="Your Email" required />
+                    <textarea name="Message" rows="6" ngModel placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <!-- <span id="msg"></span> -->
             </div>
         </div>
     </div>
@@ -198,3 +203,15 @@
         <p>Copyright &#64; Ahamad. Made with <i class="fa-solid fa-heart"></i> by Shaik.Pakeer Ahamad</p>
     </div>
 </div>
+
+<!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwuyiyZakkc8NUVGPiAhGJUnTJPEDJrh8OVRtNVCGwlW4EwzvNL0nR6bgO-3csWDHiX/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script> -->

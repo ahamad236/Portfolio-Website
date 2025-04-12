@@ -158,6 +158,12 @@ nav ul li a:hover::after {
     display: block;
 }
 
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url('assets/images/ahamad-mobile-background-image.jpg');
